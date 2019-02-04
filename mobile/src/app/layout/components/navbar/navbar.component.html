@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-row>
+      <ion-col col-4>
+        <ion-title><span><img src="assets/images/logo.png" height="24px" width="24px" style="margin-top: 5px;"></span>&nbsp;APP NAME</ion-title>
+      </ion-col>
+      <ion-col col-8 text-right>
+        <ion-chip>
+          <ion-avatar [routerLink]="['/profile']">
+            <img src="assets/images/accounts.png">
+          </ion-avatar>
+          <ion-label *ngIf="refreshUser()" [routerLink]="['/profile']">{{ user.name }}</ion-label>
+          <ion-icon name="close" (click)="logout()"></ion-icon>
+        </ion-chip>
+      </ion-col>
+    </ion-row>
+  </ion-toolbar>
+</ion-header>
