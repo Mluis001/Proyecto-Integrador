@@ -7,6 +7,7 @@ import { LayoutComponent } from './layout.component';
 
 import { IonicModule } from '@ionic/angular';
 import { NavbarComponent } from './components/navbar/navbar.component';
+import { BoardComponent } from './board/board.component';
 
 @NgModule({
   imports: [
@@ -15,6 +16,6 @@ import { NavbarComponent } from './components/navbar/navbar.component';
     IonicModule,
     LayoutRoutingModule
   ],
-  declarations: [LayoutComponent, NavbarComponent]
+  declarations: [LayoutComponent, NavbarComponent, BoardComponent]
 })
 export class LayoutModule {}
