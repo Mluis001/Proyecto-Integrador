@@ -12,7 +12,7 @@
 */
 
 $router->get('/', function () use ($router) {
-   return 'Web Wervice Realizado con LSCodeGenerator';
+   return 'Web Wervice Steve Javier Marcelo Luis';
 });
 
 $router->group(['middleware' => []], function () use ($router) {
@@ -22,7 +22,7 @@ $router->group(['middleware' => []], function () use ($router) {
    $router->get('/password_recovery', ['uses' => 'AuthController@passwordRecovery']);
 });
 
-$router->group(['middleware' => ['auth']], function () use ($router) {
+$router->group(['middleware' => []], function () use ($router) {
    $router->post('/user/password_change', ['uses' => 'AuthController@passwordChange']);
 
    //CRUD Board
